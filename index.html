@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escape</title>
+    <link rel="shortcut icon" href="./fav.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Matemasie&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=New+Amsterdam&family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Rowdies:wght@300;400;700&family=Teko:wght@300..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Matemasie&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=New+Amsterdam&family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Rowdies:wght@300;400;700&family=Teko:wght@300..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Matemasie&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=New+Amsterdam&family=Oswald:wght@200..700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Rowdies:wght@300;400;700&family=Teko:wght@300..700&display=swap" rel="stylesheet">
+    <style>
+     /* Reset some default browser styles */
+body, ul {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+.hero-section {
+    background-image: url(./pic.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    height: 450px;
+}
+.navbar
+{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+    background-color: transparent;
+}
+.logo{
+    font-size: 24px;
+    color: white;
+    font-weight: bold;
+}
+.nav-links{
+    list-style: none;
+    /* display: flex;
+    gap: 20px; */
+}
+.nav-links li{
+    display: inline;
+    margin-left: 10px;
+}
+.nav-links a 
+{
+    text-decoration: none;
+    color: white;
+
+}
+.body-part
+{
+    text-align: center;
+    padding: 50px;
+    color: white;    
+}
+.body-part h1
+{
+    font-size: 50px;
+    font-family: "Rowdies", sans-serif;
+}
+.btn
+{
+    background-color: #F17228;
+    padding:20px;
+    border: none;
+    margin-top: 10px;
+    color: white;
+    font-size: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.category-selection
+{
+    padding: 20px 0;
+    width: 100%;
+    border-bottom: 1px solid gray;
+}
+.cate{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    margin: 0 200px;
+    font-family: "PT Serif", serif;
+}
+.stay-in-touch
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./grey.jpg);
+    width: 100%;
+    background-size: cover;
+    height:250px;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+}
+.content
+{
+    text-align: center;
+    background-color: transparent;
+    padding: 20px;
+    font-family: "Playfair Display", serif;
+}
+.content h1{
+    font-size: 30px;
+    color: whitesmoke;
+    margin-bottom: 20px;
+    position: relative;
+}
+.s-form
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.email
+{
+    width:400px ;
+    height: 50px;
+    border: none;
+    border-radius: 5px;
+}
+.bt{
+    height: 50px;
+    width: 100px;
+    border: none;
+    border-radius: 5px;
+    background-color:#868686 ;
+    color: black;
+    cursor: pointer;
+    font-weight: bolder;
+    font-size: 15px;
+}
+    </style>
+</head>
+<body>
+    <div class="hero-section">
+        <nav class="navbar">
+            <div class="logo">Escape.</div>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Categories</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="body-part">
+            <h1>Let's do it together.</h1>
+            <p>We travel the world in search of stories. Come along for the ride.</p>
+            <button class="btn">View Latest Posts</button>
+        </div>
+     </div>  
+     <div class="category-selection">
+        <ul class="cate">
+        <li>Nature</li>
+        <li>Photography</li>
+        <li>Relaxation</li>
+        <li>Vacation</li>
+        <li>Travel</li>
+        <li>Adventure</li>
+        </ul>
+     </div>
+     <div class="stay-in-touch">
+        <div class="content">
+        <h1>Stay in Touch</h1>
+        <form action="post" class="s-form">
+            <input type="email" placeholder="Enter your email address" class="email">
+           <button class="bt">Submit</button>
+        </form>
+        </div>
+     </div>
+</body>
+</html>
